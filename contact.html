@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Add a custom font */
+    body {
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    /* Add a custom background color */
+    body {
+      background-color: #5e72e4;
+    }
+
+    /* Add a glow effect to the text */
+    .glow {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e9ff41, 0 0 20px #e9ff41, 0 0 25px #e9ff41, 0 0 30px #e9ff41;
+    }
+
+    /* Add a custom animation to the search bar */
+    .search-bar {
+      animation: search-bar-glow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes search-bar-glow {
+      from {
+        box-shadow: 0 0 5px #e9ff41;
+      }
+      to {
+        box-shadow: 0 0 20px #e9ff41;
+      }
+    }
+  </style>
+  <title>Contact Us</title>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="text-center text-3xl mb-5 glow">Contact Us</h1>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <form>
+          <div class="form-group">
+            <label for="name" class="text-white">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email" class="text-white">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="message" class="text-white">Message</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block search-bar">Submit</button>
+        </form>
+      </div>
+    </div>

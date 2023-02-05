@@ -1,0 +1,12 @@
+.toggle-menu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .toggle-menu {
+    display: block;
+  }
+  header h1 {
+    display: none;
+  }
+}

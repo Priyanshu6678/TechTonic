@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+  .animate-ping {
+    animation: ping 1s ease-out infinite;
+  }
+  
+  @keyframes ping {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+</style>
+
+</head>
+<body>
+   <div class="container p-10 mx-auto">
+  <h1 class="text-5xl font-bold text-center text-indigo-500">About Us</h1>
+  <p class="text-lg text-gray-600 mx-auto mb-8 w-3/4">We are a tech company dedicated to revolutionizing the industry with cutting-edge technology and innovative solutions.</p>
+  <div class="flex flex-col lg:flex-row mx-auto">
+    <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+      <img class="w-full h-64 object-cover rounded-lg" src="https://via.placeholder.com/500x300" alt="Company image">
+    </div>
+    <div class="w-full lg:w-1/2 p-10">
+      <h2 class="text-xl font-medium text-indigo-500 mb-4">Our Mission</h2>
+      <p class="text-base text-gray-600 mb-4">To provide cutting-edge technology and innovative solutions that improve the world and the way we live and work.</p>
+      <h2 class="text-xl font-medium text-indigo-500 mb-4">Our Vision</h2>
+      <p class="text-base text-gray-600 mb-4">To be a leader in the tech industry and create products that have a positive impact on society.</p>
+    </div>
+  </div>
+  <div class="w-full mt-8">
+    <div class="h-16 bg-indigo-500 rounded-lg overflow-hidden">
+      <svg class="animate-ping h-full w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#4c51bf" stroke="#4c51bf" stroke-width="5"></circle>
+        <circle cx="50" cy="50" r="35" fill="#5a67d8" stroke="#5a67d8" stroke-width="5"></circle>
+        <circle cx="50" cy="50" r="25" fill="#708efa" stroke="#708efa" stroke-width="5"></circle>
+      </svg>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
